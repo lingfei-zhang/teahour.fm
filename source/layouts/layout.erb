@@ -12,6 +12,7 @@
       <%= yield_content(:title).blank? ? data.site.title :  yield_content(:title) + " - " + data.site.title %>
     </title>
 
+    <link type="application/opensearchdescription+xml" href="opensearch.xml" title="Teahour" rel="search" />
     <meta name="description" content="<%= yield_content(:description).blank? ? data.site.description : yield_content(:description)  %>">
     <meta name="keywords" content="<%= yield_content(:keywords).blank? ? data.site.keywords.join(',') : yield_content(:keywords) %>">
     <meta name="author" content="<%= data.site.author %>">
@@ -32,7 +33,7 @@
     <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Teahour.fm Feed" href="/feed.xml" />
 
-<%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'application' %>
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     <%=  javascript_include_tag 'application' %>
     <script type="text/javascript">var _gaq = _gaq || [];
@@ -84,7 +85,7 @@
            </ul>
         </li>
 
-        <li><a href="https://github.com/pragmaticly/teahour.fm"><i class="icons-github"></i></a></li>
+        <li id="github"><a href="https://gitcafe.com/teahour/site"><i class="icons-github"></i></a></li>
       </ul>
 
         <ul class="nav">
@@ -111,7 +112,7 @@
             <li>
               <h4>Teahour.fm</h4>
               <p>
-                Teahour.fm 由 Terry Tai，Dingding Ye, Daniel Lv, Kevin Wang 和 XDite 主持，会专注程序员感兴趣的话题，包括 Web 设计和开发，移动应用设计和开发，创业以及一切 Geek 的话题。
+                Teahour.fm 由Terry，玎玎, Daniel, Kevin 和滚滚主持，会专注程序员感兴趣的话题，包括 Web 设计和开发，移动应用设计和开发，创业以及一切 Geek 的话题。
               </p>
               <h5>We also talk on:</h5>
               <ul class="social-buttons">
@@ -122,11 +123,19 @@
             </li>
           </ul>
         </li>
+        <li class="dropdown dropup" id="search">
+          <a href="#search" class="dropdown-toggle" data-toggle="dropdown">Search</a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="search">
+            <li>
+              <form class="form-inline">
+                <input type="text" placeholder="eg. dingding" id="ts-search-input">
+                <input type="submit" value="Search" name="subscribe" class="btn btn-small btn-success">
+              </form>
+            </li>
+          </ul>
+        </li>
         <!-- <li>
           <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Search</a>
         </li> -->
       </ul>
       </div>
@@ -134,9 +143,9 @@
       <p class="copyright">
         &copy; <%= Time.now.year %> <%= data.site.title %> <a href="//creativecommons.org/licenses/by-nc-sa/2.5/cn/" target="_blank">CC BY 2.5</a>
         <br />
-        Site built by <a href="//Pragmatic.ly" target="_blank" class="vendor">Pragmatic.ly</a>,
-        Logo by <a href="//weibo.com/u/1766991917" target="_blank" class="vendor">Alaia Liu</a>,
-        Audios hosted by <a href="//www.upyun.com/?md=Railscasts-china" target="_blank" class="vendor">Upyun</a>
+        本站由 <a href="https://fengcheco.com" target="_blank" class="vendor">Fengche.co</a> 设计开发,
+        感谢 <a href="//weibo.com/u/1766991917" target="_blank" class="vendor">Alaia Liu</a> 提供 Logo,
+        <a href="//www.upyun.com/?md=Railscasts-china" target="_blank" class="vendor">又拍云</a>提供音频文件存储。
       </p>
     </footer>
 
@@ -149,7 +158,42 @@
      -->
 
     <%= javascript_include_tag 'main' %>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5123d9651f2e6f1f"></script>
     <%= yield_content :footer %>
+    <script>
+      $(function() {
+        var customDropdownStylesFunction = function($this) {
+          var config = $this.data('tinysou-config-autocomplete');
+          var $attachEl = config.attachTo ? $(config.attachTo) : $this;
+          var offset = $attachEl.offset();
+          var styles = {
+            'position': 'fixed',
+            'z-index': 9999,
+            'bottom': 140,
+            'left': offset.left
+          };
+          if (config.setWidth) {
+            styles['width'] = $attachEl.outerWidth() - 2;
+          }
+          return styles;
+        };
+        var option = {
+          engineKey: '5c7c6e7c8789e403471e',
+          perPage: 5,
+          dropdownStylesFunction: customDropdownStylesFunction
+        };
+        (function(w,d,t,u,n,s,e){
+          s = d.createElement(t);
+          s.src = u;
+          s.async = 1;
+          w[n] = function(r){
+            w[n].opts = r;
+          };
+          e = d.getElementsByTagName(t)[0];
+          e.parentNode.insertBefore(s, e);
+        })(window,document,'script','//tinysou-cdn.b0.upaiyun.com/ts.js','_ts');
+        _ts(option);
+      });
+    </script>
+
   </body>
 </html>

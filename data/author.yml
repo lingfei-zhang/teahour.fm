@@ -12,7 +12,7 @@ daniel:
   name: "Daniel Lv"
   email: "lgn21st@gmail.com"
   avatar: "daniel.png"
-  link: "http://lvguoning.com"
+  link: "http://weibo.com/lgn21st"
 kevin:
   name: "Kevin Wang"
   email: "knwang@gmail.com"
@@ -92,7 +92,7 @@ wanglei:
   avatar: "wanglei.png"
   link: "http://makafei.com/blog"
 kgen:
-  name: "包桢韡 (kgen)"
+  name: "Kgen Bao"
   avatar: "kgen.jpg"
   link: "http://twitter.com/kgen"
 lilu:
@@ -171,3 +171,175 @@ happyhacking:
   name: "邱亮（HappyHacking）"
   avatar: "happyhacking.png"
   link: "http://weibo.com/hpyhck"
+secret:
+  name: "秘密"
+  avatar: "secret.png"
+  link: "#"
+allenown:
+  name: "allenown"
+  avatar: "allenown.png"
+  link: "https://twitter.com/allenown"
+puling:
+  name: "朴灵"
+  avatar: "puling.png"
+  link: "http://weibo.com/shyvo"
+laowei:
+  name: "老魏"
+  avatar: "laowei.png"
+  link: "http://weibo.com/wizweishijun"
+binghe:
+  name: "田春"
+  avatar: "binghe.png"
+  link: "http://weibo.com/tianchunbinghe"
+sting:
+  name: "Sting Chen"
+  avatar: "sting.png"
+  link: "http://weibo.com/stingchen"
+jianghaizhou:
+  name: "姜海舟"
+  avatar: "jianghaizhou.jpeg"
+  link: "http://weibo.com/u/1882468165"
+dongjing:
+  name: "Dong Jing"
+  avatar: "dongjing.png"
+  link: "http://www.weibo.com/u/2462586132"
+ari:
+  name: "Ari Lerner"
+  avatar: "ari.png"
+  link: "https://twitter.com/auser"
+linlis:
+  name: "简叔"
+  avatar: "linlis.jpg"
+  link: "http://jianshu.io/users/y3Dbcz"
+wangjian:
+  name: "王健"
+  avatar: "wangjian.jpg"
+  link: "http://weibo.com/wj1s"
+hankai:
+  name: "韩凯"
+  avatar: "hankai.jpg"
+  link: "http://weibo.com/isaachan?from=profile&wvr=5&loc=infdomain"
+xiaobo:
+  name: "小波"
+  avatar: "xiaobo.png"
+  link: "https://twitter.com/kfihihc"
+jamesyeh:
+  name: "叶俊亨"
+  avatar: "jamesyeh.jpg"
+  link: "http://facebook.com/jamesyeh0627"
+zhicheng:
+  name: "Zhicheng Liu"
+  avatar: "zhicheng.png"
+  link: "https://twitter.com/zcliu"
+zhanggong:
+  name: "Zhanggong"
+  avatar: "zhanggong.png"
+  link: "http://weibo.com/u/2473439694"
+andor:
+  name: "安道"
+  avatar: "andor.png"
+  link: "http://about.ac/"
+chijianqiang:
+  name: "池建强"
+  avatar: "chijianqiang.png"
+  link: "http://weibo.com/idreamland"
+rogerwang:
+  name: "王文睿"
+  avatar: "rogerwang.png"
+  link: "https://github.com/rogerwang"
+dinglei:
+  name: "丁磊"
+  avatar: "dinglei.jpg"
+  link: "https://www.linkedin.com/in/dinglei"
+hjiang:
+  name: "江宏"
+  avatar: "hjiang.png"
+  link: "https://github.com/hjiang"
+jasonli:
+  name: "Jason Li"
+  avatar: "jasonli.png"
+  link: "http://weibo.com/u/1780854425"
+congteng:
+  name: "丛腾"
+  avatar: "congteng.png"
+  link: "http://weibo.com/c0ngteng"
+liuning:
+  name: "刘宁"
+  avatar: "liuning.png"
+  link: "http://weibo.com/u/2675959353"
+dingyan:
+  name: "丁彦"
+  avatar: "dingyan.jpeg"
+  link: "http://weibo.com/u/3245655660"
+vincent:
+  name: ”谢文威"
+  avatar: "vincent.jpg"
+  link: "http://xiewenwei.github.io/"
+xiaodong:
+  name: "冯晓东"
+  avatar: "xiaodong.jpg"
+  link: "https://vec.io/"
+lijianye:
+  name: "李建业"
+  avatar: "lijianye.jpeg"
+  link: "http://fsword.github.io"
+zhangzetao:
+  name: "张泽涛"
+  avatar: "zetao.jpeg"
+  link: "http://weibo.com/zetaozhang"
+danielbovensiepen:
+  name: "Daniel Bovensiepen"
+  avatar: "daniel-bovensiepen.png"
+  link: "http://bovensiepen.net"
+luoxin:
+  name: "罗昕"
+  avatar: "luoxin.jpg"
+  link: ""
+yorzi:
+  name: "王耀第"
+  avatar: "yorzi.png"
+  link: "http://wangyaodi.com/"
+gungun:
+  name: "袁滚滚"
+  avatar: "gungun.jpeg"
+  link: "http://weibo.com/u/1115970444"
+elfe:
+  name: "Elfe Xu"
+  avatar: "elfexu.png"
+  link: "http://weibo.com/u/2099957354"
+shiwei:
+  name: "宋师伟"
+  avatar: "shiwei.jpg"
+  link: "http://weibo.com/u/1849571422"
+michael:
+  name: "MX鞋先生"
+  avatar: "michael.jpeg"
+  link: "http://weibo.com/mikkx"
+meaglith:
+  name: "马全一"
+  avatar: "meaglith.jpeg"
+  link: "http://meaglith.com/"
+robbin_fan:
+  name: "范凯"
+  avatar: "robbin_fan.jpg"
+  link: "http://robbinfan.com"
+youxiaoyou:
+  name: "尤小右"
+  avatar: "youxiaoyou.png"
+  link: "http://weibo.com/arttechdesign"
+howard:
+  name: "Howard"
+  avatar: "howard.png"
+  link: "http://sike.io/"
+qixiang:
+  name: "戚祥"
+  avatar: "qixiang.jpg"
+  link: "http://toutiao.io"
+eric:
+  name: "过纯中"
+  avatar: "eric.png"
+  link: "http://weibo.com/ecguo"
+jan:
+  name: "Jan Xie"
+  avatar: 'jan.png'
+  link: "http://weibo.com/p/1005055581685994"
